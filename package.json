@@ -1,0 +1,25 @@
+{
+  "name": "PZ_Challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.10.2",
+    "express": "~4.11.1",
+    "mongoose": "~3.6.13",
+    "q": "^1.5.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": ""
+}

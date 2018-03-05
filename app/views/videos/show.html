@@ -1,0 +1,27 @@
+<div id="videoWrapper" class="row vertical-align">
+    <div align="center" class="col-sm-1 col-xs-1">
+      <span id="previous" ui-sref="show({name:prevName})" class="glyphicon glyphicon-chevron-left hidden" aria-hidden="true"></span>
+    </div>
+    <div class="col-sm-10 col-xs-10">
+        <div align="center" ng-show="currentVideo.name">
+            <h1>{{currentVideo.name}}</h1>
+        </div>
+        <div align="center" class="embed-responsive embed-responsive-16by9">
+            <video id="pbVideo" class="embed-responsive-item relative" ng-src="{{ trustSrcurl(assetsAddress + currentVideo.bg) }}">
+                Your browser does not support the element <code>video</code>.
+            </video>
+            <div id="overlay"></div>
+        </div>
+        <br/>
+        <div align="center">
+            <!-- controlsList="nodownload" option, hides the download button, because in this case
+                the user will not be able to download an audible video, so, it is better to hide it -->
+            <audio id="pbAudio" ng-src="{{ trustSrcurl(assetsAddress + currentVideo.sg) }}" controls="controls" controlsList="nodownload">
+                Your browser does not support the element <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+    <div align="center" class="col-sm-1 col-xs-1">
+      <span id="next" ui-sref="show({name:nextName})" class="glyphicon glyphicon-chevron-right hidden" aria-hidden="true"></span>
+    </div>    
+</div>

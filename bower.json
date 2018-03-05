@@ -1,0 +1,22 @@
+{
+  "name": "PZ Test",
+  "description": "",
+  "main": "app.js",
+  "license": "MIT",
+  "directory": "public/app/bower_components",
+  "homepage": "index.html",
+  "dependencies": {
+    "angular": "~1.5.3",
+    "angular-resource": "1.5.3",
+    "angular-ui-router": "1.0.10",
+    "bootstrap": "3.3.7",
+    "components-font-awesome": "^4.7.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,127 @@
+/* Sets the whole site font */
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* ### Navbar ### */
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #5E44B5;
+    color: #FFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+}
+/* Logo css */
+.navbar-brand{
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+/* Navbar links css */
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, 
+.navbar-inverse .navbar-nav .active a:hover{
+    color: #FFF;
+    background-color: #5E44B5;
+}
+/* CSS to the links inside the list items */
+.navbar-inverse navbar-nav li a{
+    color: #D5D5D5;
+}
+/* ### Ends navbar ### */
+
+/* Bootstrap icon css */
+.fa{
+    padding: 15px;
+    font-size: 30px;
+    color: #FFF;
+}
+.fa:hover{
+    text-decoration: none;
+    color: #D5D5D5;
+}
+/* Icons (CSS, Bootstrap, HTML5) CSS */
+#icon{
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+/* Hides the elements */
+.hidden{
+    display: none;
+}
+
+/* Aligns vertically an item */
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+/* ### Show view ### */
+/* Sets the video position and z-index */
+.relative {
+    position:relative;
+    z-index: 1;
+}
+/* Styles the text overlay element (overlays the video) */
+#overlay {
+  position: absolute; 
+  margin: auto auto;
+  color: #FFF; 
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(222, 222, 222, 0.3);
+  width: 100%;
+  margin-top: 25%;
+  z-index: 99;
+}
+/* Set the size of the pre loading video content */
+#videosContent{
+    height: 900px;
+}
+/* Next and previous buttons font-size */
+#next, #previous {
+    font-size: 30px;
+}
+/* ### Ends show view ### */
+
+/* ### Index video list view ### */
+/* Button danger css */
+.btn{
+    margin-top: 50%;
+}
+/* h2 css */
+h2{
+    margin: 0;
+}
+/* ### Ends index video list view ### */
+
+/* Footer element CSS */
+footer{
+    width: 100%;
+    background-color: #5E44B5;
+    padding: 5%;
+    color: #FFF;
+}
+
+/* Media query CSS, when the screen is smaller than 600px */
+@media (max-width: 600px){
+    /* Icons max-width smaller */
+    #icon{
+        max-width: 150px;
+    }
+    /* Smaller font-size */
+    h4, h2, h1{
+        font-size: 1em;
+    }
+    /* Smaller font and padding for Bootstrap icons */
+    .fa{
+        font-size: 20px;
+        padding: 10px;
+    }
+    /* Smaller font for next and previous buttons */
+    #next, #previous {
+        font-size: 10px;
+    }
+}
